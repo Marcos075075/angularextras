@@ -4,7 +4,7 @@
 
   <form createform="ngForm" class="upload-form">
     <label for="file-input">Seleccione un fichero:</label>
-    <input id="file-input" type="file" name="cajaimg" #cajaimg class="form-control"/>
-    <button type="submit" class="upload-button">Pulse para subir fichero</button>
+    <input id="file-input" type="file" name="cajaimg" #cajaimg class="form-control" required/>
+    <button type="submit" class="upload-button" (click)="subirImagen()">Pulse para subir fichero</button>
   </form>
 </section>
