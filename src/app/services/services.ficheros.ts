@@ -6,7 +6,7 @@ import { firstValueFrom, Observable } from 'rxjs';
 
 @Injectable()
 export class FicherosService {
-  url = environment.urlApi;
+  url = environment.urlFicheros;
 
   constructor(private _http: HttpClient) {}
 
