@@ -8,9 +8,10 @@ import { FormsModule } from '@angular/forms';
 import { provideHttpClient } from '@angular/common/http';
 import { MenuComponent } from './components/menu-component/menu-component';
 import { HomeComponent } from './components/home-component/home-component';
+import { InformesPdfComponent } from './components/informes-pdf-component/informes-pdf-component';
 
 @NgModule({
-  declarations: [App, SubirFiicherosComponent, MenuComponent, HomeComponent],
+  declarations: [App, SubirFiicherosComponent, MenuComponent, HomeComponent, InformesPdfComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners(), FicherosService, provideHttpClient()],
   bootstrap: [App],

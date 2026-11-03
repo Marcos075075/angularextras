@@ -37,6 +37,7 @@ export class SubirFiicherosComponent {
       this._ficherosService.postFile(fichero).subscribe((response) => {
         console.log(response);
         this.urlFile = response.urlFile;
+        this.mensaje = "Fichero subido correctamente";        
         this._cdr.detectChanges();
       })
     };
