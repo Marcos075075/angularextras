@@ -3,8 +3,10 @@
   <p class="upload-description">Selecciona un fichero para comenzar la carga.</p>
 
   <form createform="ngForm" class="upload-form">
-    <label for="file-input">Seleccione un fichero:</label>
-    <input id="file-input" type="file" name="cajaimg" #cajaimg class="form-control" required/>
-    <button type="submit" class="upload-button" (click)="subirImagen()">Pulse para subir fichero</button>
+    <label>Seleccione un fichero:</label>
+    <input type="file" name="cajaimg" #cajaimg class="form-control" required />
+    <button class="upload-button" (click)="uploadFile()">Pulse para subir fichero</button>
   </form>
+  <img src="{{ urlFile }}" style="width: 150px; height: 150px; margin-top: 3%;" />
+  <h2 style="color: blue">{{ mensaje }}</h2>
 </section>

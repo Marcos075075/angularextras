@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment.development';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Fichero } from '../models/fichero';
-import { firstValueFrom } from 'rxjs';
+import { firstValueFrom, Observable } from 'rxjs';
 
 @Injectable()
 export class FicherosService {
@@ -18,5 +18,13 @@ export class FicherosService {
     return firstValueFrom(
         this._http.post(this.url + request, json, { headers: header })
     )
+  }
+
+  postFile(fichero: Fichero): Observable<any> {
+    let json = JSON.stringify(fichero);
+    let header = new HttpHeaders()
+    header = header.set('Content-Type', 'application/json');
+    let request = "api/testingfiles"
+    return this._http.post(this.url + request, json, { headers: header })
   }
 }
