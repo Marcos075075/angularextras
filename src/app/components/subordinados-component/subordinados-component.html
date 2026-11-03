@@ -1,0 +1,26 @@
+<div class="page-heading d-flex flex-wrap justify-content-between align-items-end gap-3">
+  <div><span class="eyebrow">ORGANIZACIÓN</span><h1>Mi equipo</h1><p>Personas bajo tu supervisión directa.</p></div>
+  @if (empleados) { <span class="team-count">{{ empleados.length }} miembros</span> }
+</div>
+@if (empleados){
+    <div class="table-card surface-card">
+      <div class="table-responsive">
+      <table class="table align-middle mb-0">
+        <thead>
+            <tr><th>Empleado</th><th>Oficio</th><th>Salario</th><th>Director</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (emp of empleados; track emp){
+                    <tr>
+                        <td><span class="employee-cell"><span class="employee-avatar">{{ emp.apellido.charAt(0) }}</span><span><strong>{{emp.apellido}}</strong><small>ID #{{emp.idEmpleado}}</small></span></span></td>
+                        <td><span class="role-badge">{{emp.oficio}}</span></td>
+                        <td>{{emp.salario}}</td>
+                        <td>{{emp.director}}</td>
+                    </tr>
+            }
+        </tbody>
+      </table>
+      </div>
+    </div>
+}

@@ -1,0 +1,9 @@
+.team-count { padding: .45rem .8rem; border-radius: 2rem; color: var(--primary); background: #e9edff; font-size: .8rem; font-weight: 700; }
+.table-card { overflow: hidden; }
+.table { color: var(--ink); }
+.table thead th { padding: 1rem 1.25rem; border-bottom: 1px solid var(--line); color: var(--muted); background: #fafbfe; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; }
+.table tbody td { padding: 1rem 1.25rem; border-color: var(--line); }
+.employee-cell { display: flex; align-items: center; gap: .75rem; }
+.employee-avatar { display: grid; width: 36px; height: 36px; place-items: center; border-radius: 50%; color: var(--primary); background: #e9edff; font-weight: 700; }
+.employee-cell small { display: block; color: var(--muted); font-size: .72rem; }
+.role-badge { padding: .35rem .65rem; border-radius: .4rem; color: #6851b5; background: #f0edff; font-size: .75rem; font-weight: 700; }
