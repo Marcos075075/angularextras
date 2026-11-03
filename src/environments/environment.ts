@@ -1,3 +1,4 @@
 export const environment = {
-    urlApi: "https://apipostfiles.azurewebsites.net/"
+    urlFicheros: "https://apipostfiles.azurewebsites.net/",
+    urlEquipos: "https://apiejemplos.azurewebsites.net/"
 };
